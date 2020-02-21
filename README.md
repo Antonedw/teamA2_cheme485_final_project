@@ -1,4 +1,4 @@
 # TeamA2_cheme485_final_project
 **Topic: Problems at Cumene Production Facility: Unit 800**
-hello
-I DON'T KNOW what is happening here
+
+This is bri working in her branch hehe
