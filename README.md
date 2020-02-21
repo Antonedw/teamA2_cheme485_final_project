@@ -1,4 +1,6 @@
-# TeamA2_cheme485_final_project
+# Team A2 CHEME485 Final Project
+## Project 5
+
 **Topic: Problems at Cumene Production Facility: Unit 800**
 
 **From Bri** <br>
