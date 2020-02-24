@@ -17,4 +17,4 @@ Planning reports must include:
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
-**5.** An order of magnitude estimate of the design cost. - **Emily**
+**5.** An order of magnitude estimate of the design cost. - **Bri**
