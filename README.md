@@ -1,28 +1,20 @@
-# Team A2 CHEME485 Final Project
-## Project 5
 
-**Topic: Problems at Cumene Production Facility: Unit 800**
+# TeamA2_cheme485_final_project
+**Topic: Problems at Cumene Production Facility: Unit 800** <br>
 
-**From Bri** <br>
-This is bri working in her branch hehe <br>
+We are working on **Project 5**
 
-New words<br>
+**Assignments for the Planning Report:**
+
+Planning reports must include:
+
+**1.** A short abstract describing the process. - **Georges**
+
+**2.** Hand-written block flow diagram of the process. - **Georges**
+
+**3.** Initial data regarding the reaction kinetics necessary for simulations - **Emily**
 
 
-Emily doesn't know how to do this
+**4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
-This is Edwin who changed bri's master message and pushed it. showin
-
-Emily doesnt know how to do this
-hello<br>
-I DON'T KNOW what is happening here <br>
-My personal branch - Georges
-
-**From Georges**
-
-gyghunijini
-
-Let me see if I can pull this with the master branch
-
-I am still confused here
-
+**5.** An order of magnitude estimate of the design cost. - **Emily**
