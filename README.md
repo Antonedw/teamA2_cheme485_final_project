@@ -14,6 +14,8 @@ The Cumene Production Facility buys **propylene** and **benzene** from a manufac
 
 **2.** Hand-written block flow diagram of the process. - **Georges**
 
+![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Block%20Diagram.jpeg)
+
 **3.** Initial data regarding the reaction kinetics necessary for simulations - **Emily**
 
 
