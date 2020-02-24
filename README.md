@@ -10,6 +10,8 @@ Planning reports must include:
 
 **1.** A short abstract describing the process. - **Georges**
 
+The Cumene Production Facility buys **propylene** and **benzene** from a manufacturer to produce **cumene** and an undesired product, **p-diisopropyl benzene**. The plant goal is to produce **90,000 metric tons per year of 99 wt% purity cumene**. The propylene and the benzene come liquid in the from a manufacturer, and we pump and heat them up to vaporize them since the reaction happens in the **vapor phase**. 
+
 **2.** Hand-written block flow diagram of the process. - **Georges**
 
 **3.** Initial data regarding the reaction kinetics necessary for simulations - **Emily**
