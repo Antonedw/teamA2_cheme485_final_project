@@ -1,22 +1,20 @@
 # TeamA2_cheme485_final_project
-**Topic: Problems at Cumene Production Facility: Unit 800**
-
-This is Edwin who changed bri's master message and pushed it. showin
-
-# TeamA2_cheme485_final_project <br>
 **Topic: Problems at Cumene Production Facility: Unit 800** <br>
-hello<br>
-I DON'T KNOW what is happening here <br>
-My personal branch - Georges
+
+We are working on **Project 5**
+
+**Assignments for the Planning Report:**
+
+Planning reports must include:
+
+**1.** A short abstract describing the process. - **Georges**
+
+**2.** Hand-written block flow diagram of the process. - **Georges**
+
+**3.** Initial data regarding the reaction kinetics necessary for simulations - **Emily**
+
+**4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
+
+**5.** An order of magnitude estimate of the design cost. - **Emily**
 
 
-
-
-
-gyghunijini
-
-
-Let me see if I can pull this with the master branch
-
-
-I am still confused here
