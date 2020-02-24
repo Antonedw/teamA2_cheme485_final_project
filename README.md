@@ -6,6 +6,8 @@ We are working on **Project 5**
 
 **Assignments for the Planning Report:**
 
+**DUE: Wednesday, February 26th**
+
 Planning reports must include:
 
 **1.** A short abstract describing the process. - **Georges**
