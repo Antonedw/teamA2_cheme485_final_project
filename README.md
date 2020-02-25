@@ -33,7 +33,6 @@ The reactions involved in cumene production from benzene and propylene are:
 ![](cume_reactions.png)
 
 
-
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
 Based on the information discussed in class on package selection, students should pick a package appropriate for their system and provide the rationale for doing so.
