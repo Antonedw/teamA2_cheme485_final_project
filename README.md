@@ -32,6 +32,9 @@ The reactions involved in cumene production from benzene and propylene are:
 
 ![](cume_reactions.png)
 
+The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, 
+
+Each reaction has an independent rate, 
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
