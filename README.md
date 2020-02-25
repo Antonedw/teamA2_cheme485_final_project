@@ -35,3 +35,30 @@ Based on the information discussed in class on package selection, students shoul
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
 An order of magnitude cost estimate of the design cost. Order of magnitude estimates of capital costs can be performed if you have information on an existing plant that uses a similar process, but that won’t be the case for most projects. Instead, ignore capital costs and just examine the inputs (raw materials) and outputs (products) on an annual estimate to check that there is a potential for a profit before taking into account other costs.
+
+The cost of inputs and outputs were calcualted with input benzene and propylene (Streams 1 and 2) and output fuel, high-purity cumeme, and waste DIPB (Streams 9, 13, and 14). <br>
+From Table 8.4, the cost of raw materials benzene and propylene were estimated. From Ex. 14.1, the heats of combustion for propane, cumene, and DIPB and average fuel credit were used to quantify the net profit for fuel/waste streams. <br> 
+
+The individual pricing of raw materials and the standard heats of combustion for fuel products are summarized in the table below:  <br>
+
+| Year   | Nominal i |
+| ------ | --------- |
+
+
+| Raw materials | Cost  | Unit |
+| --------------|-------| ---- |
+| benzene 	    | $0.92 | $/kg |
+| propylene 	  | $1.44 | $/kg |
+
+
+| Fuel products  | Heat of Combustion | Unit    |
+| -------------- | ------------------ | ------- |
+| propane        |	   2.22	          | GJ/kmol |
+| cumene 	       |     5.00 	        | GJ/kmol |
+| DIPB           |     6.82 	        | GJ/kmol |
+
+
+From Ex. 14.1, the heats of combustion for propane, cumene, and DIPB and average fuel credit were used to quantify the net profit for fuel/waste streams. <br> 
+Assuming 8000 operating hours per year and neglecting the small fraction of propane contained in the propylene input stream, the annual net profit for this process is approximately $127,110,932.07. <br> 
+
+The 
