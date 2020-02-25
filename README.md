@@ -36,10 +36,18 @@ The first reaction involves cumene production from propylene and benzene, while 
 
 Each reaction has an independent rate, 
 
-
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
 Based on the information discussed in class on package selection, students should pick a package appropriate for their system and provide the rationale for doing so.
+
+All information is taken **Don't Gamble with Physical Properties for Simulations**
+
+Four factors that we must take into consideration when selecting thermodyanmic models/packages are: nature or properties, composition of mixture, the pressure and temperature range, and parameter availability.  
+
+We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended packages are:   
+- Schwartentruber-Renon,  
+- Peng-Robinson or Redlich-Kwong-Soave with WS,  
+- Peng-Robinson or Redlich-Kwong-Soave with MHV2  
 
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
