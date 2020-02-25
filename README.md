@@ -28,6 +28,12 @@ This can be hand-written and doesn’t need to be made in Visio. No stream table
 
 These are the inputs necessary for a L2 reactor block in Aspen (reaction rates and activation energies). Most projects that are provided will include this reaction data, but if not, you may need to search the patent literature to find these.
 
+The reactions involved in cumene production from benzene and propylene are:
+
+![](cume_reactions.png)
+
+
+
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
 Based on the information discussed in class on package selection, students should pick a package appropriate for their system and provide the rationale for doing so.
