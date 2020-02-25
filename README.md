@@ -28,10 +28,44 @@ This can be hand-written and doesn’t need to be made in Visio. No stream table
 
 These are the inputs necessary for a L2 reactor block in Aspen (reaction rates and activation energies). Most projects that are provided will include this reaction data, but if not, you may need to search the patent literature to find these.
 
+The reactions involved in cumene production from benzene and propylene are:
+
+![](cume_reactions.png)
+
+
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
 Based on the information discussed in class on package selection, students should pick a package appropriate for their system and provide the rationale for doing so.
 
+All information is taken **Don't Gamble with Physical Properties for Simulations**
+
+Four factors that we must take into consideration when selecting thermodyanmic models/packages are: nature or properties, composition of mixture, the pressure and temperature range, and parameter availability.  
+
+We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended packages are:   
+- Schwartentruber-Renon,  
+- Peng-Robinson or Redlich-Kwong-Soave with WS,  
+- Peng-Robinson or Redlich-Kwong-Soave with MHV2  
+
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
 An order of magnitude cost estimate of the design cost. Order of magnitude estimates of capital costs can be performed if you have information on an existing plant that uses a similar process, but that won’t be the case for most projects. Instead, ignore capital costs and just examine the inputs (raw materials) and outputs (products) on an annual estimate to check that there is a potential for a profit before taking into account other costs.
+
+The cost of inputs and outputs were calcualted with input benzene and propylene (Streams 1 and 2) and output fuel, high-purity cumeme, and waste DIPB (Streams 9, 13, and 14). <br>
+From Table 8.4, the cost of raw materials benzene and propylene were estimated. From Ex. 14.1, the heats of combustion for propane, cumene, and DIPB and average fuel credit were used to quantify the net revenue for sale of fuel in the waste streams. <br> 
+
+The individual pricing of raw materials and the standard heats of combustion for fuel products are summarized in the tables below:  <br>
+
+| Raw materials | Cost  | Unit |
+| --------------|-------| ---- |
+| benzene 	    | $0.92 | $/kg |
+| propylene 	  | $1.44 | $/kg |
+
+| Fuel products  | Heat of Combustion | Unit    |
+| -------------- | ------------------ | ------- |
+| propane        |	   2.22	          | GJ/kmol |
+| cumene 	       |     5.00 	        | GJ/kmol |
+| DIPB           |     6.82 	        | GJ/kmol |
+
+Assuming 8000 operating hours per year and neglecting the small fraction of propane contained in the propylene input stream, the annual net profit for this process is approximately $127,110,932.07. <br> 
+
+The spreadsheet with detailed calculations for the order of magnitude cost estimation is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
