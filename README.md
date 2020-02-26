@@ -32,9 +32,37 @@ The reactions involved in cumene production from benzene and propylene are:
 
 ![](cume_reactions.png)
 
-The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, 
+The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, it is important to know the reaction kinetics, so that we may manipulate the environment to favor the cumene production reaction.
 
-Each reaction has an independent rate, 
+Each reaction has an independent rate, dependent on the molar concentration of each reactant and an individual reaction rate constant 'ka', where a denotes which reaction we are referring to.
+
+In reaction 1, the cumene production reaction, the rate is: 
+
+rate = k1 * concentration of propylene * concentration of benzene.
+
+where
+
+k1 = 3.5 * 10^4 * exp(-24.90 / RT)
+
+Which tells us the activation energy is 24.90 kcal/mol.
+
+
+In reaction 2, the p-diisopropyl benzene production reaction, the rate is: 
+
+rate = k2 * concentration of propylene * concentration of cumene.
+
+where
+
+k1 = 2.9 * 10^6 * exp(-35.08 / RT)
+
+Which tells us the activation energy is 35.08 kcal/mol.
+
+
+The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.
+
+
+The units of the rates are mole/ g cat * sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m^3, and the particle diameter is 3mm. 
+the heat transfer coefficient from packed bed to tube wall, 'h,' is 60 W/m^2 * C
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
