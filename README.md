@@ -38,7 +38,7 @@ Each reaction has an independent rate, dependent on the molar concentration of e
 
 In reaction 1, the cumene production reaction, the rate is: 
 
-rate = k1 * concentration of propylene * concentration of benzene.
+r<sub>1</sub> = k1 * C<sub>propylene</sub> * C<sub>benzene</sub>.
 
 where
 
@@ -49,7 +49,7 @@ Which tells us the activation energy is 24.90 kcal/mol.
 
 In reaction 2, the DIPB production reaction, the rate is: 
 
-rate = k2 * concentration of propylene * concentration of cumene.
+r<sub>2</sub> = k2 * C<sub>propylene</sub> * C<sub>cumene</sub>.
 
 where
 
