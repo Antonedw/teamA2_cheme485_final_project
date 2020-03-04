@@ -101,6 +101,39 @@ Assuming 8000 operating hours per year and neglecting the small fraction of prop
 
 The spreadsheet with detailed calculations for the order of magnitude cost estimation is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
 
+**Equipment Summary** <br>
+P-803: The pump is a 75% efficient centrifugal pump with a driver rated at 2.4 kW.
+P-804: The pump is a 75% efficient centrifugal pump with a driver rated at 1.0 kW.
+P-805: The pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW.
+
+E-801: uses HPS (high pressure steam) in the shell with Q= 12,800 MJ/hr. A = 20.8m^2 in two zones, Desubcooling zone has A=13.5m^2, U=600W/m^2* C, hi = 667 W/m^3 * C, Vaporizing zone: A= 7.3 m^2, U = 1500 W/m^2 C with equal resistance on both sides
+
+
+E-802: condensor for a flash unit, with the process stream in the shell, in a 1-2 configuration. Q=16,400 MJ/hr, A=533m^2
+E-803: total condensor for a T-801, with the condensing fluid in the shell. 
+ A=151m^2, U = 450 W/m^2C and all resistance on the water side.
+E-804: reboiler T-801. 
+ A=405m^2, U = 750 W/m^2C approx equal resistances.
+E-805: total condensor for T-802, with the condensing fluid in the shell. 
+ A=24m^2, U = 750 W/m^2C anpprox equal resistances.
+E-806: reboiler T-802. 
+ A=64m^2, U = 750 W/m^2C approx equal resistancese.
+
+
+Fired heater H-801: Q= 6380 MJ/h of heat added to fluid, capacity 10,000MJ/hr, 70% efficiency
+
+Reactor: R-801: A shell and tube packed bed reactor with keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell produces HPS, reactor volume is 6.5 m^3, exchange area is 342 m^2, 234 tubes each 6m long
+
+
+
+ V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. 
+ 
+P-801A/B: This benzene feed pump raises the pressure of the combined benzene feed and recycle stream from 1.01 bar to 31.5 bar, and the temperature from 41 to 44 degrees C. P-801 is a 75% efficient centrifugal  with a driver rated at 21.9 kW.
+
+P-802A/B: The propylene feed pump raises pressure of the the propylene feed in stream 2 from 11.66 bar to 31.5 bar. The pump is a 75% efficient centrifugal pump with a driver rated at 6.8 kW.
+<br>
+<br>
+-------------------------------------------------------------------------------------------------------------------------------
 
 ***Assignments for the Final Report*** <br>
 
