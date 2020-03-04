@@ -32,7 +32,7 @@ The reactions involved in cumene production from benzene and propylene are:
 
 ![](cume_reactions.png)
 
-The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, it is important to know the reaction kinetics, so that we may manipulate the environment to favor the cumene production reaction.
+The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form DIPB. Since cumene is our desired product, and DIPB is an environmental and health hazard, it is important to know the reaction kinetics, so that we may manipulate the environment to favor the cumene production reaction.
 
 Each reaction has an independent rate, dependent on the molar concentration of each reactant and an individual reaction rate constant 'ka', where a denotes which reaction we are referring to.
 
@@ -47,7 +47,7 @@ k1 = 3.5*10<sup>4</sup>*e<sup>(-24.90/RT)</sup> <br>
 Which tells us the activation energy is 24.90 kcal/mol.
 
 
-In reaction 2, the p-diisopropyl benzene production reaction, the rate is: 
+In reaction 2, the DIPB production reaction, the rate is: 
 
 rate = k2 * concentration of propylene * concentration of cumene.
 
@@ -61,7 +61,7 @@ Which tells us the activation energy is 35.08 kcal/mol.
 The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.
 
 
-The units of the rates are mol/g cat-sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m<sup>3</sup>, and the particle diameter is 3mm. 
+The units of the rates are mol/g cat-sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m<sup>3</sup>, and the particle diameter is 3 mm. 
 the heat transfer coefficient from packed bed to tube wall, 'h,' is 60 W/m<sup>2</sup> -C
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
@@ -72,10 +72,9 @@ All information is taken **Don't Gamble with Physical Properties for Simulations
 
 Four factors that we must take into consideration when selecting thermodyanmic models/packages are: nature or properties, composition of mixture, the pressure and temperature range, and parameter availability.  
 
-We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended packages are:   
-- Schwartentruber-Renon,  
-- Peng-Robinson or Redlich-Kwong-Soave with WS,  
-- Peng-Robinson or Redlich-Kwong-Soave with MHV2  
+We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and DIPB. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader. Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended package is:   
+
+- **Peng-Robinson or Redlich-Kwong-Soave with WS**,  
 
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
