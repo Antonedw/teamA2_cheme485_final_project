@@ -102,30 +102,6 @@ Assuming 8000 operating hours per year and neglecting the small fraction of prop
 The spreadsheet with detailed calculations for the order of magnitude cost estimation is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
 
 **Equipment Summary** <br>
-P-803: The pump is a 75% efficient centrifugal pump with a driver rated at 2.4 kW.
-P-804: The pump is a 75% efficient centrifugal pump with a driver rated at 1.0 kW.
-P-805: The pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW.
-
-
-E-803: total condensor for a T-801, with the condensing fluid in the shell. 
- A=151m^2, U = 450 W/m^2C and all resistance on the water side.
-E-804: reboiler T-801. 
- A=405m^2, U = 750 W/m^2C approx equal resistances.
-E-805: total condensor for T-802, with the condensing fluid in the shell. 
- A=24m^2, U = 750 W/m^2C anpprox equal resistances.
-E-806: reboiler T-802. 
- A=64m^2, U = 750 W/m^2C approx equal resistancese.
-
-
-Distillation column T-801 removes the benzene impurity overhead for recycle. It uses medium pressure steam (MPS) in the reboiler and cooling water in the condensor, which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .44, there are 27 trays which are 50% efficient, space 24 in apart with 3 in weirs. The tower diameter is 1.13M, and 75% of the total area is active. Qc is -5390MJ/hr, Qr is 7100 MJ/hr.
-
-Distillation column T-801 removes thecumene product overhead. It usesHPS in the reboiler and cooling water in the condensor, which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .63, there are 37 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.26M, and 75% of the total area is active. Qc is -5490MJ/hr, Qr is 5530 MJ/hr.
-
-V-802 is a flash drum. 5.2m tall, 1 m in diameter for total volume V = 4.08 m^3 (assuming cylindrical)
-V-803 is T-801's rflux drum 4 m long, 1.6 m in diameter, volume = 8.04 m^3 (assuming cylindrical)
-V-804 is T-802's reflux drum 6.5 m long, 1.6m diameter, V= 13.07
-
-
 V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. It is horizontally 
        placed, 4.2m long and 1.4m in diameter, for a total volume of 6.47 m^3 assuming cylindrical.
  
@@ -147,6 +123,29 @@ R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphori
 E-802: Follows the reactor, acting as a condensor for flash unit V-802. The process stream is in the shell, and the condensor is  in a 1-2 configuration. Cooling water brings temperatures from 350C to 90C and partially condense stream 8. Q = 16,400 MJ/hr, A = 533m^2.
 
 V-802: A flash drum separates out the fuel gas stream by separating the stream at 90C. The fuel gas separates out most of the propane in the system, which comes in with the propylene feed and remains inert. The stream that leaves in stream 10 is liquid. The flash drum is vertical--5.2m tall, 1 m in diameter for total volume V = 4.08 m^3 (assuming the vessel is cylindrical).
+
+T-801: A distillation column that removes the benzene impurity overhead for recycle. It uses medium pressure steam (MPS) in the reboiler (E-804) and cooling water in the condensor (E-803), which is returned at the maximum allowable teperature. Qr is 7100 MJ/hr. Qc is -5390MJ/hr The distillate stream (recycle, primarily benzene) leaves the total condensor (E-803, V-803, P-803) at 57C. The bottoms (primarily cumene), leaves at 179C. The reflux ratio is .44, there are 27 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.13 m, and 75% of the total area is active.
+
+E-803: This heat exchanger is the total condensor for T-801, with the condensing fluid (cooling water) in the shell. The condensed fluid is let out into V-803 and P-803 before returning to the tower as reflux or exiting as the recycle stream. A = 151m^2, U = 450 W/m^2C and all resistance is on the water side.
+
+V-803: T-801's rflux drum. It takes fluid from the total condensor (E-803) and sends it to P-803. 4 m long, 1.6 m in diameter, volume = 8.04 m^3 (assuming cylindrical). Horizontally placed.
+
+P-803: This pump is a 75% efficient centrifugal pump with a driver rated at 2.4 kW. It takes fluid from T-801's reflux drum (V-803) and sends it to T-801 as reflux or out into stream 11 as 93.8% benzene to be recycled.
+
+E-804: This is T-801's reboiler. A = 405m^2, U = 750 W/m^2C approx equal resistances. Uses MPS. Qr is 7100 MJ/hr.
+
+P-804: This pump is a 75% efficient centrifugal pump with a driver rated at 1.0 kW. It prepares the bottoms product exiting T-801 for entry to T-802.
+
+T-802: Distillation column that removes the cumene product overhead. It uses HPS in the reboiler(E-806) and cooling water in the condensor (E-805), which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .63, there are 37 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.26 M, and 75% of the total area is active. Qc is -5490 MJ/hr, Qr is 5530 MJ/hr.
+
+E-805: This heat exchanger uses cooling water to condense the overhead from distillation column T-802. It is a total condensor, with the condensing fluid in the shell. A = 24m^2, U = 750 W/m^2C, approximately equal resistances.
+
+V-804: T-802's reflux drum. It takes fluid from the total condensor (E-805) and sends it to P-805. The horizontally placed vessel is 6.5 m long, 1.6m in diameter, for a total volume of 13.07 m^3, assuming the vassel is cylindrical.
+
+P-805: This pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW. The bottoms product that exits it from T-802 is 99% cumene and is the cumene product stream.
+
+E-806: This exchanger is the reboiler for distillation column T-802. It uses HPS. A = 64m^2, U = 750 W/m^2C approx equal resistances. Qr is 5530 MJ/hr.
+
 <br>
 <br>
 -------------------------------------------------------------------------------------------------------------------------------
