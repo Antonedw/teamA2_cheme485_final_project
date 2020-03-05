@@ -106,7 +106,6 @@ P-803: The pump is a 75% efficient centrifugal pump with a driver rated at 2.4 k
 P-804: The pump is a 75% efficient centrifugal pump with a driver rated at 1.0 kW.
 P-805: The pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW.
 
-E-801: uses HPS (high pressure steam) in the shell with Q= 12,800 MJ/hr. A = 20.8m^2 in two zones, Desubcooling zone has A=13.5m^2, U=600W/m^2* C, hi = 667 W/m^3 * C, Vaporizing zone: A= 7.3 m^2, U = 1500 W/m^2 C with equal resistance on both sides
 
 
 E-802: condensor for a flash unit, with the process stream in the shell, in a 1-2 configuration. Q=16,400 MJ/hr, A=533m^2
@@ -120,17 +119,35 @@ E-806: reboiler T-802.
  A=64m^2, U = 750 W/m^2C approx equal resistancese.
 
 
-Fired heater H-801: Q= 6380 MJ/h of heat added to fluid, capacity 10,000MJ/hr, 70% efficiency
+Distillation column T-801 removes the benzene impurity overhead for recycle. It uses medium pressure steam (MPS) in the reboiler and cooling water in the condensor, which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .44, there are 27 trays which are 50% efficient, space 24 in apart with 3 in weirs. The tower diameter is 1.13M, and 75% of the total area is active. Qc is -5390MJ/hr, Qr is 7100 MJ/hr.
 
-Reactor: R-801: A shell and tube packed bed reactor with keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell produces HPS, reactor volume is 6.5 m^3, exchange area is 342 m^2, 234 tubes each 6m long
+Distillation column T-801 removes thecumene product overhead. It usesHPS in the reboiler and cooling water in the condensor, which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .63, there are 37 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.26M, and 75% of the total area is active. Qc is -5490MJ/hr, Qr is 5530 MJ/hr.
+
+V-802 is a flash drum. 5.2m tall, 1 m in diameter for total volume V = 4.08 m^3 (assuming cylindrical)
+V-803 is T-801's rflux drum 4 m long, 1.6 m in diameter, volume = 8.04 m^3 (assuming cylindrical)
+V-804 is T-802's reflux drum 6.5 m long, 1.6m diameter, V= 13.07
 
 
-
- V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. 
+V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. It is horizontally 
+       placed, 4.2m long and 1.4m in diameter, for a total volume of 6.47 m^3 assuming cylindrical.
  
-P-801A/B: This benzene feed pump raises the pressure of the combined benzene feed and recycle stream from 1.01 bar to 31.5 bar, and the temperature from 41 to 44 degrees C. P-801 is a 75% efficient centrifugal  with a driver rated at 21.9 kW.
+P-801A/B: This benzene feed pump raises the pressure of the combined benzene feed and recycle stream from 1.01 bar to 31.5 bar,         
+       and the temperature from 41 to 44 degrees C. P-801 is a 75% efficient centrifugal  with a driver rated at 21.9 kW.
 
-P-802A/B: The propylene feed pump raises pressure of the the propylene feed in stream 2 from 11.66 bar to 31.5 bar. The pump is a 75% efficient centrifugal pump with a driver rated at 6.8 kW.
+P-802A/B: The propylene feed pump raises pressure of the the propylene feed in stream 2 from 11.66 bar to 31.5 bar. The pump is
+       a 75% efficient centrifugal pump with a driver rated at 6.8 kW.
+
+E-801: uses HPS (high pressure steam) in the shell to bring the temperature in stream 6 (combine reactant stream) from 41C to
+       214C. Heat into the exchanger (Q) is 12,800 MJ/hr. A = 20.8m^2 in two zones, Desubcooling zone has A = 13.5m^2, 
+       U=600W/m^2C, hi = 667 W/m^3C, in the Vaporizing zone: A= 7.3 m^2, U = 1500 W/m^2 C with equal resistance on both sides.
+       
+H-801: This is a fired heater that prepares the feed to enter the reactor. Q = 6380 MJ/hr of heat added to fluid, raising 
+       temperatures in stream 6a from 214C to 350C. The heater's capacity is 10,000 MJ/hr, and it runs at 70% efficiency.
+       
+R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell 
+      produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes 
+      each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor 
+      produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. 
 <br>
 <br>
 -------------------------------------------------------------------------------------------------------------------------------
