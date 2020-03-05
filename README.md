@@ -30,7 +30,7 @@ These are the inputs necessary for a L2 reactor block in Aspen (reaction rates a
 
 The reactions involved in cumene production from benzene and propylene are:
 
-![](cume_reactions.png)
+ <img src = "cume_reactions.png" width=300>
 
 The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, it is important to know the reaction kinetics, so that we may manipulate the environment to favor the cumene production reaction.
 
@@ -54,8 +54,6 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=k_1&space;=&space;2.9*10^{4}&space;exp(-35.08/RT)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_1&space;=&space;2.9*10^{6}&space;exp(-35.08/RT)" title="k_1 = 2.9*10^{6} exp(-35.08/RT)" /></a>
 
-k1 = 2.9 * 10^6 * exp(-35.08 / RT)
-
 with <a href="https://www.codecogs.com/eqnedit.php?latex=E_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_a" title="E_a" /></a>  being in kcal/mol. 
 
 The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.  
@@ -70,10 +68,10 @@ All information is taken **Don't Gamble with Physical Properties for Simulations
 
 Four factors that we must take into consideration when selecting thermodyanmic models/packages are: nature or properties, composition of mixture, the pressure and temperature range, and parameter availability.  
 
-We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended packages are:   
-- Schwartentruber-Renon,  
-- Peng-Robinson or Redlich-Kwong-Soave with WS,  
-- Peng-Robinson or Redlich-Kwong-Soave with MHV2  
+We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended package is:   
+
+- **Redlich-Kwong-Soave with WS**  
+  
 
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
