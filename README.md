@@ -31,8 +31,35 @@ These are the inputs necessary for a L2 reactor block in Aspen (reaction rates a
 
 The reactions involved in cumene production from benzene and propylene are:
 
-![](cume_reactions.png)
+ <img src = "cume_reactions.png" width=300>
 
+The first reaction involves cumene production from propylene and benzene, while in the second the cumene and propylene react to form p-diisopropyl benzene. Since cumene is our desired product, and p-diisopropyl benzene is an environmental and health hazard, it is important to know the reaction kinetics, so that we may manipulate the environment to favor the cumene production reaction.
+
+Each reaction has an independent rate, dependent on the molar concentration of each reactant and an individual reaction rate constant 'ka', where a denotes which reaction we are referring to.
+
+**In reaction 1, the cumene production reaction, the rate is:**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=r&space;=&space;k_1*C_{propylene}*C_{benzen}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r&space;=&space;k_1*C_{propylene}*C_{benzene}" title="r = k_1*C_{propylene}*C_{benzene}" /></a>  
+
+where 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=k_1&space;=&space;3.5*10^{-4}&space;exp(-24.90/RT)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_1&space;=&space;3.5*10^{-4}&space;exp(-24.90/RT)" title="k_1 = 3.5*10^{-4} exp(-24.90/RT)" /></a>
+
+with <a href="https://www.codecogs.com/eqnedit.php?latex=E_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_a" title="E_a" /></a>  being in kcal/mol.  
+
+**In reaction 2, the p-diisopropyl benzene production reaction, the rate is:**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=r&space;=&space;k_1*C_{propylene}*C_{cumene}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r&space;=&space;k_1*C_{propylene}*C_{cumene}" title="r = k_1*C_{propylene}*C_{cumene}" /></a>  
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=k_1&space;=&space;2.9*10^{4}&space;exp(-35.08/RT)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_1&space;=&space;2.9*10^{6}&space;exp(-35.08/RT)" title="k_1 = 2.9*10^{6} exp(-35.08/RT)" /></a>
+
+with <a href="https://www.codecogs.com/eqnedit.php?latex=E_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_a" title="E_a" /></a>  being in kcal/mol. 
+
+The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.  
+
+The units of the rates are mole/ g cat * sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m^3, and the particle diameter is 3mm. The heat transfer coefficient from packed bed to tube wall, 'h,' is 60 W/m^2 * C.  
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
@@ -42,10 +69,10 @@ All information is taken **Don't Gamble with Physical Properties for Simulations
 
 Four factors that we must take into consideration when selecting thermodyanmic models/packages are: nature or properties, composition of mixture, the pressure and temperature range, and parameter availability.  
 
-We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended packages are:   
-- Schwartentruber-Renon,  
-- Peng-Robinson or Redlich-Kwong-Soave with WS,  
-- Peng-Robinson or Redlich-Kwong-Soave with MHV2  
+We would first go off the basis of the chemicals that are present in the process which include: Propylene, Benzene, Cumene, Propane, and p-diisopropyl benzene. Some notable operating conditions that these components will experience are temperatures 25-350 degrees celsius and pressures up to 31.25 bar. Although all compounds are hydrocarbons, they still do posses some degree of polarity, therefore not allowing for "All-Polar" packages suchs as Peng-Robinson, Redlich-Kwong or Chao-Seader.   Rather we assume we have polar components and that we have mixture containing no electrolytes. Additionally given that pressures we are working with exceed 10 bar, and that interaction parameters (extra information needed) were found readily through a quick google search, the reccomended package is:   
+
+- **Redlich-Kwong-Soave with WS**  
+  
 
 **5.** An order of magnitude estimate of the design cost. - **Bri**
 
@@ -70,3 +97,91 @@ The individual pricing of raw materials and the standard heats of combustion for
 Assuming 8000 operating hours per year and neglecting the small fraction of propane contained in the propylene input stream, the annual net profit for this process is approximately $127,110,932.07. <br> 
 
 The spreadsheet with detailed calculations for the order of magnitude cost estimation is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
+
+**Equipment Summary** <br>
+V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. It is horizontally 
+       placed, 4.2m long and 1.4m in diameter, for a total volume of 6.47 m^3 assuming cylindrical.
+ 
+P-801A/B: This benzene feed pump raises the pressure of the combined benzene feed and recycle stream from 1.01 bar to 31.5 bar,         
+       and the temperature from 41 to 44 degrees C. P-801 is a 75% efficient centrifugal  with a driver rated at 21.9 kW.
+
+P-802A/B: The propylene feed pump raises pressure of the the propylene feed in stream 2 from 11.66 bar to 31.5 bar. The pump is
+       a 75% efficient centrifugal pump with a driver rated at 6.8 kW.
+
+E-801: uses HPS (high pressure steam) in the shell to bring the temperature in stream 6 (combine reactant stream) from 41C to
+       214C. Heat into the exchanger (Q) is 12,800 MJ/hr. A = 20.8m^2 in two zones, Desubcooling zone has A = 13.5m^2, 
+       U=600W/m^2C, hi = 667 W/m^3C, in the Vaporizing zone: A= 7.3 m^2, U = 1500 W/m^2 C with equal resistance on both sides.
+       
+H-801: This is a fired heater that prepares the feed to enter the reactor. Q = 6380 MJ/hr of heat added to fluid, raising 
+       temperatures in stream 6a from 214C to 350C and vaporizing the stream. The heater's capacity is 10,000 MJ/hr, and it runs at 70% efficiency.
+       
+R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. All reactions occur in the gas phase, and products are fully vaporized.
+
+E-802: Follows the reactor, acting as a condensor for flash unit V-802. The process stream is in the shell, and the condensor is  in a 1-2 configuration. Cooling water brings temperatures from 350C to 90C and partially condense stream 8. Q = 16,400 MJ/hr, A = 533m^2.
+
+V-802: A flash drum separates out the fuel gas stream by separating the stream at 90C. The fuel gas separates out most of the propane in the system, which comes in with the propylene feed and remains inert. The stream that leaves in stream 10 is liquid. The flash drum is vertical--5.2m tall, 1 m in diameter for total volume V = 4.08 m^3 (assuming the vessel is cylindrical).
+
+T-801: A distillation column that removes the benzene impurity overhead for recycle. It uses medium pressure steam (MPS) in the reboiler (E-804) and cooling water in the condensor (E-803), which is returned at the maximum allowable teperature. Qr is 7100 MJ/hr. Qc is -5390MJ/hr The distillate stream (recycle, primarily benzene) leaves the total condensor (E-803, V-803, P-803) at 57C. The bottoms (primarily cumene), leaves at 179C. The reflux ratio is .44, there are 27 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.13 m, and 75% of the total area is active.
+
+E-803: This heat exchanger is the total condensor for T-801, with the condensing fluid (cooling water) in the shell. The condensed fluid is let out into V-803 and P-803 before returning to the tower as reflux or exiting as the recycle stream. A = 151m^2, U = 450 W/m^2C and all resistance is on the water side.
+
+V-803: T-801's rflux drum. It takes fluid from the total condensor (E-803) and sends it to P-803. 4 m long, 1.6 m in diameter, volume = 8.04 m^3 (assuming cylindrical). Horizontally placed.
+
+P-803: This pump is a 75% efficient centrifugal pump with a driver rated at 2.4 kW. It takes fluid from T-801's reflux drum (V-803) and sends it to T-801 as reflux or out into stream 11 as 93.8% benzene to be recycled.
+
+E-804: This is T-801's reboiler. A = 405m^2, U = 750 W/m^2C approx equal resistances. Uses MPS. Qr is 7100 MJ/hr.
+
+P-804: This pump is a 75% efficient centrifugal pump with a driver rated at 1.0 kW. It prepares the bottoms product exiting T-801 for entry to T-802.
+
+T-802: Distillation column that removes the cumene product overhead. It uses HPS in the reboiler(E-806) and cooling water in the condensor (E-805), which is returned at the max allowable teperature. The reflux ratio at the plant's current situation is .63, there are 37 trays which are 50% efficient, spaced 24 in apart with 3 in weirs. The tower diameter is 1.26 M, and 75% of the total area is active. Qc is -5490 MJ/hr, Qr is 5530 MJ/hr.
+
+E-805: This heat exchanger uses cooling water to condense the overhead from distillation column T-802. It is a total condensor, with the condensing fluid in the shell. A = 24m^2, U = 750 W/m^2C, approximately equal resistances.
+
+V-804: T-802's reflux drum. It takes fluid from the total condensor (E-805) and sends it to P-805. The horizontally placed vessel is 6.5 m long, 1.6m in diameter, for a total volume of 13.07 m^3, assuming the vassel is cylindrical.
+
+P-805: This pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW. The bottoms product that exits it from T-802 is 99% cumene and is the cumene product stream.
+
+E-806: This exchanger is the reboiler for distillation column T-802. It uses HPS. A = 64m^2, U = 750 W/m^2C approx equal resistances. Qr is 5530 MJ/hr.
+
+<br>
+<br>
+-------------------------------------------------------------------------------------------------------------------------------
+
+***Assignments for the Final Report*** <br>
+
+**Letter of Transmission** <br>
+Directions: This is a memorandum (if internal) or a letter (if external) to the appropriate person identifying the report. Teh report is actually an enclosure to this letter. Remember to refer to teh original memorandum or problem statement. In order to get the reader’s attention, writing several sentences summarizing the bottom line is essential. You should always sign or initial this memo or letter. This letter stands alone. It contains no figures or tables, and does not reference any figures or tables contained within the report.
+
+**Title page** <br>
+title, names, class name and date
+
+**Abstract or Executive Summary** <br>
+Directions: Either an abstract or an executive summary should convey to the reader, in a rapid and concise manner, what you did, what you conclude, and what you recommend. This is for the reader who may not read any further or for the reader who is deciding whether or not to read any further. Summarize the bottom line; do not discuss computational details unless they are unique and applicable beyond the report at hand. In an executive summary (but not in an abstract), do not be afraid to use a few well chosen graphs, pie charts or histograms to emphasize your important points, but choose these wisely in order to keep the length of the executive summary down.
+
+These instructions suggest that the contents of the abstract and letter of transmittal are similar. Since both sections are supposed to provide a summary of important conclusions, there will be significant repetition of content. The abstract usually contains more information than the letter of transmittal.
+
+**Table of Contents** <br>
+This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
+
+**Introduction** <br>
+This is for the reader who continues past the abstract. The introduction is a one or two paragraph summary of what was assigned, what was done, and, (very briefly) how it was done. A summary of the constraints on the problem is appropriate, as well as some perspective on the specific problem in the context of the larger business picture. There should be no results or conclusions in the Introduction section.
+
+**Results** <br>
+The following are essential components of a results section:
+
+Labeled and dated process flow diagram (PFD).
+Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream.
+Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included.
+Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment.
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.
+
+**Discussion** <br>
+Now you go into more detail. This section is for the reader who still wants more information and is willing to read still further. Here you discuss the reasons for making choices and the reasons for discarding alternatives. This is where you discuss any optimization that was done. You might also discuss non routine or unique computational aspects
+
+**Conclusions** <br>
+Nothing new is presented in this section. You should reiterate your important conclusions, which may have already been stated in the abstract, the executive summary, and/or the letter of transmittal. Usually these will involve dollars and process modifications. Be concise and clear; avoid lengthy paragraphs. Once again, remember the bottom line!
+
+**Recommendations** <br>
+This section includes recommendations for further action and/or further study. If there are few conclusions and recommendations, these two sections can be combined. Avoid recommendations that are “pie in the sky,” like finding a better catalyst.
+
+**References** <br>
