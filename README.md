@@ -107,8 +107,6 @@ P-804: The pump is a 75% efficient centrifugal pump with a driver rated at 1.0 k
 P-805: The pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW.
 
 
-
-E-802: condensor for a flash unit, with the process stream in the shell, in a 1-2 configuration. Q=16,400 MJ/hr, A=533m^2
 E-803: total condensor for a T-801, with the condensing fluid in the shell. 
  A=151m^2, U = 450 W/m^2C and all resistance on the water side.
 E-804: reboiler T-801. 
@@ -142,12 +140,13 @@ E-801: uses HPS (high pressure steam) in the shell to bring the temperature in s
        U=600W/m^2C, hi = 667 W/m^3C, in the Vaporizing zone: A= 7.3 m^2, U = 1500 W/m^2 C with equal resistance on both sides.
        
 H-801: This is a fired heater that prepares the feed to enter the reactor. Q = 6380 MJ/hr of heat added to fluid, raising 
-       temperatures in stream 6a from 214C to 350C. The heater's capacity is 10,000 MJ/hr, and it runs at 70% efficiency.
+       temperatures in stream 6a from 214C to 350C and vaporizing the stream. The heater's capacity is 10,000 MJ/hr, and it runs at 70% efficiency.
        
-R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell 
-       produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes 
-       each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor 
-       produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. 
+R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. All reactions occur in the gas phase, and products are fully vaporized.
+
+E-802: Follows the reactor, acting as a condensor for flash unit V-802. The process stream is in the shell, and the condensor is  in a 1-2 configuration. Cooling water brings temperatures from 350C to 90C and partially condense stream 8. Q = 16,400 MJ/hr, A = 533m^2.
+
+V-802: A flash drum separates out the fuel gas stream by separating the stream at 90C. The fuel gas separates out most of the propane in the system, which comes in with the propylene feed and remains inert. The stream that leaves in stream 10 is liquid. The flash drum is vertical--5.2m tall, 1 m in diameter for total volume V = 4.08 m^3 (assuming the vessel is cylindrical).
 <br>
 <br>
 -------------------------------------------------------------------------------------------------------------------------------
