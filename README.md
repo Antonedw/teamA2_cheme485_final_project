@@ -36,33 +36,31 @@ The first reaction involves cumene production from propylene and benzene, while 
 
 Each reaction has an independent rate, dependent on the molar concentration of each reactant and an individual reaction rate constant 'ka', where a denotes which reaction we are referring to.
 
-In reaction 1, the cumene production reaction, the rate is: 
+**In reaction 1, the cumene production reaction, the rate is:**
 
-rate = k1 * concentration of propylene * concentration of benzene.
+<a href="https://www.codecogs.com/eqnedit.php?latex=r&space;=&space;k_1*C_{propylene}*C_{benzen}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r&space;=&space;k_1*C_{propylene}*C_{benzene}" title="r = k_1*C_{propylene}*C_{benzene}" /></a>  
+
+where 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=k_1&space;=&space;3.5*10^{-4}&space;exp(-24.90/RT)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_1&space;=&space;3.5*10^{-4}&space;exp(-24.90/RT)" title="k_1 = 3.5*10^{-4} exp(-24.90/RT)" /></a>
+
+with <a href="https://www.codecogs.com/eqnedit.php?latex=E_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_a" title="E_a" /></a>  being in kcal/mol.  
+
+**In reaction 2, the p-diisopropyl benzene production reaction, the rate is:**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=r&space;=&space;k_1*C_{propylene}*C_{cumene}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r&space;=&space;k_1*C_{propylene}*C_{cumene}" title="r = k_1*C_{propylene}*C_{cumene}" /></a>  
 
 where
 
-k1 = 3.5 * 10^4 * exp(-24.90 / RT)
-
-Which tells us the activation energy is 24.90 kcal/mol.
-
-
-In reaction 2, the p-diisopropyl benzene production reaction, the rate is: 
-
-rate = k2 * concentration of propylene * concentration of cumene.
-
-where
+<a href="https://www.codecogs.com/eqnedit.php?latex=k_1&space;=&space;2.9*10^{4}&space;exp(-35.08/RT)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_1&space;=&space;2.9*10^{6}&space;exp(-35.08/RT)" title="k_1 = 2.9*10^{6} exp(-35.08/RT)" /></a>
 
 k1 = 2.9 * 10^6 * exp(-35.08 / RT)
 
-Which tells us the activation energy is 35.08 kcal/mol.
+with <a href="https://www.codecogs.com/eqnedit.php?latex=E_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_a" title="E_a" /></a>  being in kcal/mol. 
 
+The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.  
 
-The differences in activation energies and the concentrations on which each reaction is dependent make it possible to favor reaction one by decreasing inlet energy (to ensure the activation energy for two is not reached) or supplying a high concentration of benzene, which is useless in reaction 2 but necessary in reaction 1.
-
-
-The units of the rates are mole/ g cat * sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m^3, and the particle diameter is 3mm. 
-the heat transfer coefficient from packed bed to tube wall, 'h,' is 60 W/m^2 * C
+The units of the rates are mole/ g cat * sec. These indicate that the reaction also depends on the weight of the phosphoric acid catalyst present in the reactor. This catalyst is supported on kieselguhr to maximize activity and surface area. For the shell and tube configuration used at the plant, the void fraction of catalyst is 0.5, the particle density is 1600 kg/m^3, and the particle diameter is 3mm. The heat transfer coefficient from packed bed to tube wall, 'h,' is 60 W/m^2 * C.  
 
 **4.** A suggested thermodynamics package and any extra information that needs to be gathered for the simulation - **Edwin**
 
