@@ -145,9 +145,9 @@ H-801: This is a fired heater that prepares the feed to enter the reactor. Q = 6
        temperatures in stream 6a from 214C to 350C. The heater's capacity is 10,000 MJ/hr, and it runs at 70% efficiency.
        
 R-801: A shell and tube packed bed reactor with a keiselguhr-supported phosphoric acid catalyst. Boiler feed water in shell 
-      produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes 
-      each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor 
-      produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. 
+       produces HPS, maintaing temperatures at 350C. The reactor volume is 6.5 m^3, and exchange area is 342 m^2 in 234 tubes 
+       each 6m long. U= 65W/m^2C, with all resistance on the reactor side. The heat removal required is 9840 MJ/hr. The reactor 
+       produces 93.45 kmol/hr of cumene and 2.79 kmol/hr of P-diisopropyl benzene by consuming benzene and propylene. 
 <br>
 <br>
 -------------------------------------------------------------------------------------------------------------------------------
