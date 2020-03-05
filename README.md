@@ -107,7 +107,7 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 
 
 **Equipment Summary** Emily <br>
-![](equipment_summary_p1.png)
+![](equipment_summary_p1.png) 
 ![](equipment_summary_p2.png)
 
 
