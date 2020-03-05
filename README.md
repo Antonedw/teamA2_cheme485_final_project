@@ -98,6 +98,13 @@ Assuming 8000 operating hours per year and neglecting the small fraction of prop
 
 The spreadsheet with detailed calculations for the order of magnitude cost estimation is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
 
+
+# PFD
+
+**PFD and Stream Table**
+
+![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-04%20at%209.03.33%20AM.png)
+
 **Equipment Summary** <br>
 V-801: This is the benzene feed drum: in this vessel, the Benzene feed and recycle stream are combined. It is horizontally 
        placed, 4.2m long and 1.4m in diameter, for a total volume of 6.47 m^3 assuming cylindrical.
@@ -142,6 +149,11 @@ V-804: T-802's reflux drum. It takes fluid from the total condensor (E-805) and 
 P-805: This pump is a 75% efficient centrifugal pump with a driver rated at 3.3 kW. The bottoms product that exits it from T-802 is 99% cumene and is the cumene product stream.
 
 E-806: This exchanger is the reboiler for distillation column T-802. It uses HPS. A = 64m^2, U = 750 W/m^2C approx equal resistances. Qr is 5530 MJ/hr.
+
+
+**Aspen PFD**
+
+![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Aspen%20PFD.PNG)
 
 <br>
 <br>
