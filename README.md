@@ -128,7 +128,7 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 
 **PFD and Stream Table**
 
-![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-04%20at%209.03.33%20AM.png)
+![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-13%20at%2012.26.10%20AM.png)
 
 
 **Equipment Summary** Emily <br>
