@@ -124,8 +124,6 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_costing.xlsx) <br>
 
 ----------------------------------------------------------------------------------------------------------------------------
-=======
-
 # PFD
 
 **PFD and Stream Table**
@@ -140,11 +138,8 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 
 **Aspen PFD**
 
-![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Aspen%20PFD.PNG)
-
-<br>
-<br>
--------------------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Aspen%20PFD.PNG) <br>
+----------------------------------------------------------------------------------------------------------------------------
 
 ***Assignments for the Final Report*** <br>
 
