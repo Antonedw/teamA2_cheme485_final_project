@@ -173,37 +173,37 @@ Equipment summary. A listing of equipment to be purchased and installed, with sp
 
 The Direct Capital Costs (CD) is $113.1 million/year, with raw materials consisting of over 90% of the total. The full estimated breakdown of the Direct Capital Costs is shown in Table #. Estimation was conducted according to Table 8.2 in Turton. Further breakdowns of raw materials and utilities are in Tables 2 and 4 below. The prices for materials are from ICIS and utility prices from Turton and are assumed to be 2012 values.  <br>
 
-Table 1. Cost factors for capital costs. <br>
+*Table 1. Cost factors for capital costs.* <br>
 ![breakdown](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.24%20PM.png) <br> 
 
 The table below include pricing for all streams entering or leaving the process as a whole. The first three are reactant streams containing propylene/propane and benzene which equate to raw material costs. This accounts for the majority of direct capital costs. The following two rows are products streams which are revenue producing. Revenue per annum for the cumene production facility is $155 million which demonstrates that the process is both feasible and profitable. <br>
 
-Table 2. Annual material costs and prices of reactants and products. Propylene, propane, and benzene are costs, and cumene is a profit.<br>
+*Table 2. Annual material costs and prices of reactants and products. Propylene, propane, and benzene are costs, and cumene is a profit.* <br>
 ![crm](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.34%20PM.png) <br> 
 
 Although raw material costs and revenue of the overall process can be approximated using input and product streams alone, the fuel gas product stream acts as fuel for the furnace, thus cost savings are realized by analyzing the production of fuel gas. The full breakdown of each fuel component and their heat of combustion is provided in Table 3. The price per kilogram was calculated using the heats of combustion multiplied by a fuel credit of $2.50/GJ of each component. The heats of combustion and molecular weights are sourced from NIST Webbook. Therefore, the last column in Table 3 is subtracted from the utility costs for the furnace on-site since that amount of fuel would not need to be outsourced to run that equipment at the facility.  <br>
 
-Table 3. Annual fuel recovery costs and heats of combustion for materials. Products in streams 9 and 14 are recycled as fuel for the cumene production facility.
+*Table 3. Annual fuel recovery costs and heats of combustion for materials. Products in streams 9 and 14 are recycled as fuel for the cumene production facility.*
 ![fuel](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.42%20PM.png) <br> 
 
 Table 4 below depicts utility costs for relevant equipment. H-801 uses natural gas, but this partially accounted for using fuel gas credit from distillate from T-801 and impurities from the flash unit V-802 (refer to Table 3). The reboilers all use either medium- or high-pressure steam while pumps require electricity. Coolers require cooling water. All utility prices are from Turton and are assumed to be 2012 values. 
 
-Table 4. Annual utility costs for selected equipment. <br>
+*Table 4. Annual utility costs for selected equipment.* <br>
 ![utilities](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.50%20PM.png) <br> 
 
 The total manufacturing costs without depreciation, COMd can be estimated by adding three categories together: CRM, CUT, and COL.  <br>
 
-COM<sub>d</sub> = 0.18*FCI<sub>L</sub> + 2.76*C<sub>OL</sub> + 1.23*(C<sub>UT</sub> + C<sub>WT</sub> + C<sub>RM</sub>) <br>
+COM<sub>d</sub> = 0.18*FCI<sub>L</sub> + 2.76(C<sub>OL</sub> + 1.23(C<sub>UT</sub> + C<sub>WT</sub> + C<sub>RM</sub>) <br>
 
 Solving for COM<sub>d</sub> using the information in Table 1, a value of $138 million is obtained. This approximation indicates that direct capital costs account for over 80% of the manufacturing costs. The COM<sub>d</sub> does not take the estimating factors from Table 1 into account, but raw materials and utilities account for a large portion of total costs, thus the COM<sub>d</sub> is generally insensitive to these estimating factors.  <br>
 
 **Fixed Capital Investment**
 
-The Fixed Capital Investment (FCI<sub>L</sub>) for the project is expected to be $30 million. This was calculated by multiplying the sum of the Total Module Cost (C<sub>TM</sub) and half the Bare Module Cost (C<sub>BM</sub) by the Lang Factor of a fluid processing plant, F<sub>Lang</sub> = 4.74. The Bare Module Cost is calculated in Table 5 below, which shows the equipment in the plant, the purchase cost, and C<sub>BM</sub. CAPCOST was used to price equipment, using the CEPCI for 2010, which is 551. <br>
+The Fixed Capital Investment (FCI<sub>L</sub>) for the project is expected to be $30 million. This was calculated by multiplying the sum of the Total Module Cost (C<sub>TM</sub>) and half the Bare Module Cost (C<sub>BM</sub>) by the Lang Factor of a fluid processing plant, F<sub>Lang</sub> = 4.74. The Bare Module Cost is calculated in Table 5 below, which shows the equipment in the plant, the purchase cost, and C<sub>BM</sub>. CAPCOST was used to price equipment, using the CEPCI for 2010, which is 551. <br>
 
-Table 5. Purchase and bare module cost for all major equipment. <br>
+*Table 5. Purchase and bare module cost for all major equipment.* <br>
 ![fci](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.13.34%20PM.png) <br> 
-The total C<sub>BM</sub is just below $3.8 million which yields a C<sub>TM</sub of approximately $4.4 million. This gives an FCI<sub>L</sub> of $ 30 million. <br>
+The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub> of approximately $4.4 million. This gives an FCI<sub>L</sub> of $ 30 million. <br>
 
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
