@@ -238,7 +238,16 @@ The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub
 
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
+
 **Discussion** <br> everyone
+=======
+**Modified equipment--changing U and A or no??? **
+
+![](Equip_sum1.png)
+![](Equip_sum2.png)
+
+**Discussion** <br>
+
 Now you go into more detail. This section is for the reader who still wants more information and is willing to read still further. Here you discuss the reasons for making choices and the reasons for discarding alternatives. This is where you discuss any optimization that was done. You might also discuss non routine or unique computational aspects
 
 **Conclusions** <br> em, edwin
