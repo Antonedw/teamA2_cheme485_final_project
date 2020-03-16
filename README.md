@@ -143,31 +143,62 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 
 ***Assignments for the Final Report*** <br>
 
-**Letter of Transmission** <br>
+**Letter of Transmission** <br> bri
 Directions: This is a memorandum (if internal) or a letter (if external) to the appropriate person identifying the report. Teh report is actually an enclosure to this letter. Remember to refer to teh original memorandum or problem statement. In order to get the reader’s attention, writing several sentences summarizing the bottom line is essential. You should always sign or initial this memo or letter. This letter stands alone. It contains no figures or tables, and does not reference any figures or tables contained within the report.
 
-**Title page** <br>
+**Title page** <br> bri
 title, names, class name and date
 
-**Abstract or Executive Summary** <br>
+**Abstract or Executive Summary** <br> em
 Directions: Either an abstract or an executive summary should convey to the reader, in a rapid and concise manner, what you did, what you conclude, and what you recommend. This is for the reader who may not read any further or for the reader who is deciding whether or not to read any further. Summarize the bottom line; do not discuss computational details unless they are unique and applicable beyond the report at hand. In an executive summary (but not in an abstract), do not be afraid to use a few well chosen graphs, pie charts or histograms to emphasize your important points, but choose these wisely in order to keep the length of the executive summary down.
 
 These instructions suggest that the contents of the abstract and letter of transmittal are similar. Since both sections are supposed to provide a summary of important conclusions, there will be significant repetition of content. The abstract usually contains more information than the letter of transmittal.
 
-**Table of Contents** <br>
+**Abstract (to be added to upon completion)**
+
+Cumene is an important chemical intermediary, used to produce other chemicals such as phenol, acetone, acetophenone, and methyl styrene [1]. Our company's plant aims to produce its full capacity--90,000 metric tons yearly--of cumene with 99 weight % or greater purity with a vapor phase alkylation process catalysed by kieselguhr supported phosphoric acid.
+
+The plant has been successful, but a recent change in our propylene suppliers heralded a number of issues, The change in plant operating conditions caused cumene production to drop by 8%, and reflux in T-801 had to be increased by 8% to maintain the requisite 99% purity. Fuel gas production increased by 78%, benzene recycle has increased and steam production in the reactor went down. Meanwhile, p-diisopropyl benzene (p-DIPD), the product of a side reaction involving propylene and cumene, was produced at 20% lower rates. A warm spell caused damage to P-802. The plant has numerous competitors, so our team’s goal was to fix these issues and lower production costs.
+
+We modeled the ideal process and the issues on ASPEN, then used single variable optimization of reflux ratio, catalyst density, catalyst weight, reactor temperature, and reactor pressure to establish a baseline of effective variable changes. The single variable optimization did not produce the requisite 99% purity of cumene.  A subsequent multivariable optimization successfully produced 92.269 kmol/hr of cumene at 99.05% purity while incresing the rate of p-DIPD production and decreasing fuel gas production.
+
+In the idealized situation, the pressure into the reactor increased to 50 bar, and the temperature dropped to 300 C. The high pressure increases the frequency of gas  molecule collisions, and therefore the rate of the vapor-phase reaction, resulting in greater cumene production. Since temperature had very little effect on comene production, it was decreased for optimal energy usage. The reflux ratios of T-801 and T-802 were decreased  to .3 and .6, respectively. Decreasing T-801’s reflux ratio results in less cumene being released into the recycle stream. At the old reflux ratio, T-802 produced very high purity cumene at slightly lower rates. Dropping the reflux ratio brings purity down to 99% and raises distillate rate to 92.269 kmol/hr.
+
+**TALK A BIT ABOUT COSTS** 
+
+
+**Table of Contents** <br> em (after the fact)
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
 
-**Introduction** <br>
+**Contents**<br>
+0.0 Letter of Transmittal <br>
+0.1 Title Page <br>
+0.2 Abstract <br>
+1.0 Introduction <br>
+2.0 Results <br>
+    2.1 Process Flow Diagram <br>
+    2.2 Stream Tables <br>
+    2.3 Manufacturing Cost <br>
+    2.4 Investment Summary <br>
+    2.5 Equipment Summary <br>
+3.0 Discussion <br>
+4.0 Conclusion  <br>
+5.0 Reccomendations <br>
+6.0 References <br>
+
+**Introduction** <br> edwin
 This is for the reader who continues past the abstract. The introduction is a one or two paragraph summary of what was assigned, what was done, and, (very briefly) how it was done. A summary of the constraints on the problem is appropriate, as well as some perspective on the specific problem in the context of the larger business picture. There should be no results or conclusions in the Introduction section.
+
+
 
 **Results** <br>
 The following are essential components of a results section:
 
-*Labeled and dated process flow diagram (PFD).
-Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream.
-Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included.
-Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment.
-Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br>
+*Labeled and dated process flow diagram (PFD). Georges 
+Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges
+Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri
+Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri, em
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em
 
 **Capital Costs**
 
@@ -207,18 +238,25 @@ The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub
 
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
+
+**Discussion** <br> everyone
+=======
 **Modified equipment--changing U and A or no??? **
 
 ![](Equip_sum1.png)
 ![](Equip_sum2.png)
 
 **Discussion** <br>
+
 Now you go into more detail. This section is for the reader who still wants more information and is willing to read still further. Here you discuss the reasons for making choices and the reasons for discarding alternatives. This is where you discuss any optimization that was done. You might also discuss non routine or unique computational aspects
 
-**Conclusions** <br>
+**Conclusions** <br> em, edwin
 Nothing new is presented in this section. You should reiterate your important conclusions, which may have already been stated in the abstract, the executive summary, and/or the letter of transmittal. Usually these will involve dollars and process modifications. Be concise and clear; avoid lengthy paragraphs. Once again, remember the bottom line!
 
-**Recommendations** <br>
+**Recommendations** <br> Georges
 This section includes recommendations for further action and/or further study. If there are few conclusions and recommendations, these two sections can be combined. Avoid recommendations that are “pie in the sky,” like finding a better catalyst.
 
-**References** <br>
+**References** <br> georges
+1 http://www.npi.gov.au/resource/cumene-1-methylethylbenzene
+2 https://www.chemicalbook.com/Price/CUMENE.htm
+
