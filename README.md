@@ -156,15 +156,16 @@ These instructions suggest that the contents of the abstract and letter of trans
 
 **Abstract (to be added to upon completion)**
 
-Cumene is used to produce other chemicals such as phenol, acetone, acetophenone, and methyl styrene [1]. Our plant has the capacity to produce a yearly 90,000 metric tons of of 99 weight % cumene with a vapor phase alkylation process catalysed by keiselguhr supported phosphoric acid.  
+Cumene is an important chemical intermediary, used to produce other chemicals such as phenol, acetone, acetophenone, and methyl styrene [1]. Our company's plant aims to produce its full capacity--90,000 metric tons yearly--of cumene with 99 weight % or greater purity with a vapor phase alkylation process catalysed by kieselguhr supported phosphoric acid.
 
-Recently, however, plant operating conditions have changed, and a number of issues have begun to plague the plant. For example, cumene production has dropped by 8%, while reflux had to be increased  by 8% to maintan the requisite 99% purity. Fuel gas production increased by 78%, and the prssure contol valve used to control fuel gas flow is fully open. Benzene recycle has increased and steam oroduction in the reactor has gone down. Meanwhile, p-diisopropyl benzene (p-DIPD), the product of a side reaction involving propylne and cumene, is produced at 20% lower rates. Since the plant sells fuel gas, cumene, and p-DIPD, changes in production can drastically affect profits. **feed pumps**
+The plant has been successful, but a recent change in our propylene suppliers heralded a number of issues, The change in plant operating conditions caused cumene production to drop by 8%, and reflux in T-801 had to be increased by 8% to maintain the requisite 99% purity. Fuel gas production increased by 78%, benzene recycle has increased and steam production in the reactor went down. Meanwhile, p-diisopropyl benzene (p-DIPD), the product of a side reaction involving propylene and cumene, was produced at 20% lower rates. A warm spell caused damage to P-802. The plant has numerous competitors, so our team’s goal was to fix these issues and lower production costs.
 
-These flaws leave the company especially vulnerable strong competitors, who have begun to undercut prices. We are looking for a way to drop production costs and increase cumene production  **T or F ($36.50/kg comene [2])**. 
+We modeled the ideal process and the issues on ASPEN, then used single variable optimization of reflux ratio, catalyst density, catalyst weight, reactor temperature, and reactor pressure to establish a baseline of effective variable changes. The single variable optimization did not produce the requisite 99% purity of cumene.  A subsequent multivariable optimization successfully produced 92.269 kmol/hr of cumene at 99.05% purity while incresing the rate of p-DIPD production and decreasing fuel gas production.
 
-We modeled the ideal process on ASPEN, then modeled the new issues by modeling the changes to the plant. We 
+In the idealized situation, the pressure into the reactor increased to 50 bar, and the temperature dropped to 300 C. The high pressure increases the frequency of gas  molecule collisions, and therefore the rate of the vapor-phase reaction, resulting in greater cumene production. Since temperature had very little effect on comene production, it was decreased for optimal energy usage. The reflux ratios of T-801 and T-802 were decreased  to .3 and .6, respectively. Decreasing T-801’s reflux ratio results in less cumene being released into the recycle stream. At the old reflux ratio, T-802 produced very high purity cumene at slightly lower rates. Dropping the reflux ratio brings purity down to 99% and raises distillate rate to 92.269 kmol/hr.
 
-As a stopgap measure, we recommend either raiding te temperatrue and pressure in the reactor,because increasing pressure increases the speed of 
+**TALK A BIT ABOUT COSTS** 
+
 
 **Table of Contents** <br> em (after the fact)
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
