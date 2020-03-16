@@ -171,16 +171,16 @@ In the idealized situation, the pressure into the reactor increased to 50 bar, a
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
 
 **Contents**<br>
-0. Letter of Transmittal <br>
+0.0 Letter of Transmittal <br>
 0.1 Title Page <br>
 0.2 Abstract <br>
 1.0 Introduction <br>
 2.0 Results <br>
-  2.1 Process Flow Diagram <br>
-  2.2 Stream Tables <br>
-  2.3 Manufacturing Cost <br>
-  2.4 Investment Summary <br>
-  2.5 Equipment Summary <br>
+    2.1 Process Flow Diagram <br>
+    2.2 Stream Tables <br>
+    2.3 Manufacturing Cost <br>
+    2.4 Investment Summary <br>
+    2.5 Equipment Summary <br>
 3.0 Discussion <br>
 4.0 Conclusion  <br>
 5.0 Reccomendations <br>
