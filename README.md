@@ -170,6 +170,22 @@ In the idealized situation, the pressure into the reactor increased to 50 bar, a
 **Table of Contents** <br> em (after the fact)
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
 
+**Contents**
+0. Letter of Transmittal
+0.1 Title Page
+0.2 Abstract
+1.0 Introduction
+2.0 Results
+ 2.1 Process Flow Diagram
+ 2.2 Stream Tables
+ 2.3 Manufacturing Cost
+ 2.4 Investment Summary
+ 2.5 Equipment Summary
+3.0 Discussion
+4.0 Conclusion
+5.0 Reccomendations
+6.0 References
+
 **Introduction** <br> edwin
 This is for the reader who continues past the abstract. The introduction is a one or two paragraph summary of what was assigned, what was done, and, (very briefly) how it was done. A summary of the constraints on the problem is appropriate, as well as some perspective on the specific problem in the context of the larger business picture. There should be no results or conclusions in the Introduction section.
 
