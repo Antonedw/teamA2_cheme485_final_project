@@ -143,77 +143,120 @@ The spreadsheet with detailed calculations for the order of magnitude cost estim
 
 ***Assignments for the Final Report*** <br>
 
-**Letter of Transmission** <br>
+**Letter of Transmission** <br> bri
 Directions: This is a memorandum (if internal) or a letter (if external) to the appropriate person identifying the report. Teh report is actually an enclosure to this letter. Remember to refer to teh original memorandum or problem statement. In order to get the reader’s attention, writing several sentences summarizing the bottom line is essential. You should always sign or initial this memo or letter. This letter stands alone. It contains no figures or tables, and does not reference any figures or tables contained within the report.
 
-**Title page** <br>
+**Title page** <br> bri
 title, names, class name and date
 
-**Abstract or Executive Summary** <br>
+**Abstract or Executive Summary** <br> em
 Directions: Either an abstract or an executive summary should convey to the reader, in a rapid and concise manner, what you did, what you conclude, and what you recommend. This is for the reader who may not read any further or for the reader who is deciding whether or not to read any further. Summarize the bottom line; do not discuss computational details unless they are unique and applicable beyond the report at hand. In an executive summary (but not in an abstract), do not be afraid to use a few well chosen graphs, pie charts or histograms to emphasize your important points, but choose these wisely in order to keep the length of the executive summary down.
 
 These instructions suggest that the contents of the abstract and letter of transmittal are similar. Since both sections are supposed to provide a summary of important conclusions, there will be significant repetition of content. The abstract usually contains more information than the letter of transmittal.
 
-**Table of Contents** <br>
+**Abstract (to be added to upon completion)**
+
+Cumene is an important chemical intermediary, used to produce other chemicals such as phenol, acetone, acetophenone, and methyl styrene [1]. Our company's plant aims to produce its full capacity--90,000 metric tons yearly--of cumene with 99 weight % or greater purity with a vapor phase alkylation process catalysed by kieselguhr supported phosphoric acid.
+
+The plant has been successful, but a recent change in our propylene suppliers heralded a number of issues, The change in plant operating conditions caused cumene production to drop by 8%, and reflux in T-801 had to be increased by 8% to maintain the requisite 99% purity. Fuel gas production increased by 78%, benzene recycle has increased and steam production in the reactor went down. Meanwhile, p-diisopropyl benzene (p-DIPD), the product of a side reaction involving propylene and cumene, was produced at 20% lower rates. A warm spell caused damage to P-802. The plant has numerous competitors, so our team’s goal was to fix these issues and lower production costs.
+
+We modeled the ideal process and the issues on ASPEN, then used single variable optimization of reflux ratio, catalyst density, catalyst weight, reactor temperature, and reactor pressure to establish a baseline of effective variable changes. The single variable optimization did not produce the requisite 99% purity of cumene.  A subsequent multivariable optimization successfully produced 92.269 kmol/hr of cumene at 99.05% purity while incresing the rate of p-DIPD production and decreasing fuel gas production.
+
+In the idealized situation, the pressure into the reactor increased to 50 bar, and the temperature dropped to 300 C. The high pressure increases the frequency of gas  molecule collisions, and therefore the rate of the vapor-phase reaction, resulting in greater cumene production. Since temperature had very little effect on comene production, it was decreased for optimal energy usage. The reflux ratios of T-801 and T-802 were decreased  to .3 and .6, respectively. Decreasing T-801’s reflux ratio results in less cumene being released into the recycle stream. At the old reflux ratio, T-802 produced very high purity cumene at slightly lower rates. Dropping the reflux ratio brings purity down to 99% and raises distillate rate to 92.269 kmol/hr.
+
+**TALK A BIT ABOUT COSTS** 
+
+
+**Table of Contents** <br> em (after the fact)
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
 
-**Introduction** <br>
+**Contents**<br>
+0.0 Letter of Transmittal <br>
+0.1 Title Page <br>
+0.2 Abstract <br>
+1.0 Introduction <br>
+2.0 Results <br>
+    2.1 Process Flow Diagram <br>
+    2.2 Stream Tables <br>
+    2.3 Manufacturing Cost <br>
+    2.4 Investment Summary <br>
+    2.5 Equipment Summary <br>
+3.0 Discussion <br>
+4.0 Conclusion  <br>
+5.0 Reccomendations <br>
+6.0 References <br>
+
+**Introduction** <br> edwin
 This is for the reader who continues past the abstract. The introduction is a one or two paragraph summary of what was assigned, what was done, and, (very briefly) how it was done. A summary of the constraints on the problem is appropriate, as well as some perspective on the specific problem in the context of the larger business picture. There should be no results or conclusions in the Introduction section.
+
+
 
 **Results** <br>
 The following are essential components of a results section:
 
-*Labeled and dated process flow diagram (PFD).
-Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream.
-Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included.
-Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment.
-Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br>
+*Labeled and dated process flow diagram (PFD). Georges 
+Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges
+Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri
+Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri, em
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em
 
 **Capital Costs**
 
 The Direct Capital Costs (CD) is $113.1 million/year, with raw materials consisting of over 90% of the total. The full estimated breakdown of the Direct Capital Costs is shown in Table #. Estimation was conducted according to Table 8.2 in Turton. Further breakdowns of raw materials and utilities are in Tables 2 and 4 below. The prices for materials are from ICIS and utility prices from Turton and are assumed to be 2012 values.  <br>
 
-Table 1. Cost factors for capital costs. <br>
+*Table 1. Cost factors for capital costs.* <br>
 ![breakdown](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.24%20PM.png) <br> 
 
 The table below include pricing for all streams entering or leaving the process as a whole. The first three are reactant streams containing propylene/propane and benzene which equate to raw material costs. This accounts for the majority of direct capital costs. The following two rows are products streams which are revenue producing. Revenue per annum for the cumene production facility is $155 million which demonstrates that the process is both feasible and profitable. <br>
 
-Table 2. Annual material costs and prices of reactants and products. Propylene, propane, and benzene are costs, and cumene is a profit.<br>
+*Table 2. Annual material costs and prices of reactants and products. Propylene, propane, and benzene are costs, and cumene is a profit.* <br>
 ![crm](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.34%20PM.png) <br> 
 
 Although raw material costs and revenue of the overall process can be approximated using input and product streams alone, the fuel gas product stream acts as fuel for the furnace, thus cost savings are realized by analyzing the production of fuel gas. The full breakdown of each fuel component and their heat of combustion is provided in Table 3. The price per kilogram was calculated using the heats of combustion multiplied by a fuel credit of $2.50/GJ of each component. The heats of combustion and molecular weights are sourced from NIST Webbook. Therefore, the last column in Table 3 is subtracted from the utility costs for the furnace on-site since that amount of fuel would not need to be outsourced to run that equipment at the facility.  <br>
 
-Table 3. Annual fuel recovery costs and heats of combustion for materials. Products in streams 9 and 14 are recycled as fuel for the cumene production facility.
+*Table 3. Annual fuel recovery costs and heats of combustion for materials. Products in streams 9 and 14 are recycled as fuel for the cumene production facility.*
 ![fuel](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.42%20PM.png) <br> 
 
 Table 4 below depicts utility costs for relevant equipment. H-801 uses natural gas, but this partially accounted for using fuel gas credit from distillate from T-801 and impurities from the flash unit V-802 (refer to Table 3). The reboilers all use either medium- or high-pressure steam while pumps require electricity. Coolers require cooling water. All utility prices are from Turton and are assumed to be 2012 values. 
 
-Table 4. Annual utility costs for selected equipment. <br>
+*Table 4. Annual utility costs for selected equipment.* <br>
 ![utilities](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.50%20PM.png) <br> 
 
 The total manufacturing costs without depreciation, COMd can be estimated by adding three categories together: CRM, CUT, and COL.  <br>
 
-COM<sub>d</sub> = 0.18*FCI<sub>L</sub> + 2.76*C<sub>OL</sub> + 1.23*(C<sub>UT</sub> + C<sub>WT</sub> + C<sub>RM</sub>) <br>
+COM<sub>d</sub> = 0.18*FCI<sub>L</sub> + 2.76(C<sub>OL</sub> + 1.23(C<sub>UT</sub> + C<sub>WT</sub> + C<sub>RM</sub>) <br>
 
 Solving for COM<sub>d</sub> using the information in Table 1, a value of $138 million is obtained. This approximation indicates that direct capital costs account for over 80% of the manufacturing costs. The COM<sub>d</sub> does not take the estimating factors from Table 1 into account, but raw materials and utilities account for a large portion of total costs, thus the COM<sub>d</sub> is generally insensitive to these estimating factors.  <br>
 
 **Fixed Capital Investment**
 
-The Fixed Capital Investment (FCI<sub>L</sub>) for the project is expected to be $30 million. This was calculated by multiplying the sum of the Total Module Cost (C<sub>TM</sub) and half the Bare Module Cost (C<sub>BM</sub) by the Lang Factor of a fluid processing plant, F<sub>Lang</sub> = 4.74. The Bare Module Cost is calculated in Table 5 below, which shows the equipment in the plant, the purchase cost, and C<sub>BM</sub. CAPCOST was used to price equipment, using the CEPCI for 2010, which is 551. <br>
+The Fixed Capital Investment (FCI<sub>L</sub>) for the project is expected to be $30 million. This was calculated by multiplying the sum of the Total Module Cost (C<sub>TM</sub>) and half the Bare Module Cost (C<sub>BM</sub>) by the Lang Factor of a fluid processing plant, F<sub>Lang</sub> = 4.74. The Bare Module Cost is calculated in Table 5 below, which shows the equipment in the plant, the purchase cost, and C<sub>BM</sub>. CAPCOST was used to price equipment, using the CEPCI for 2010, which is 551. <br>
 
-Table 5. Purchase and bare module cost for all major equipment. <br>
+*Table 5. Purchase and bare module cost for all major equipment.* <br>
 ![fci](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.13.34%20PM.png) <br> 
-The total C<sub>BM</sub is just below $3.8 million which yields a C<sub>TM</sub of approximately $4.4 million. This gives an FCI<sub>L</sub> of $ 30 million. <br>
+The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub> of approximately $4.4 million. This gives an FCI<sub>L</sub> of $ 30 million. <br>
 
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
+
+**Discussion** <br> everyone
+=======
+**Modified equipment--changing U and A or no??? **
+
+![](Equip_sum1.png)
+![](Equip_sum2.png)
+
 **Discussion** <br>
+
 Now you go into more detail. This section is for the reader who still wants more information and is willing to read still further. Here you discuss the reasons for making choices and the reasons for discarding alternatives. This is where you discuss any optimization that was done. You might also discuss non routine or unique computational aspects
 
-**Conclusions** <br>
+**Conclusions** <br> em, edwin
 Nothing new is presented in this section. You should reiterate your important conclusions, which may have already been stated in the abstract, the executive summary, and/or the letter of transmittal. Usually these will involve dollars and process modifications. Be concise and clear; avoid lengthy paragraphs. Once again, remember the bottom line!
 
-**Recommendations** <br>
+**Recommendations** <br> Georges
 This section includes recommendations for further action and/or further study. If there are few conclusions and recommendations, these two sections can be combined. Avoid recommendations that are “pie in the sky,” like finding a better catalyst.
 
-**References** <br>
+**References** <br> georges
+1 http://www.npi.gov.au/resource/cumene-1-methylethylbenzene
+2 https://www.chemicalbook.com/Price/CUMENE.htm
+
