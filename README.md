@@ -239,15 +239,27 @@ The CAPCOST sheet used to make these estimations is provided [here](https://gith
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
 **Reactor config**
-An intial exploration of the possible reactorconfigurations (optimizing T, P) compared conversion and reactor condition:
-![](Conversion.png)
-we found that **X** was the **WORST** **Best**
-then, we went on to test purity.
-![](Purity.png)
-As you can see, the purity is only high when T drops to 300K
-![](cumene_outlet.png)
-![](money_config.png)
-![](money_react_only.png)
+Cumene creation in our system can be improved by changing reactor conditions. To optimize these conditions we performed a two variable optimization on the temperature and pressure inlets to the reactor. The spreadsheet with the combined ASPEN and CAPCOST information can be found [here](Reactor_optimiz.xlsx).  <br>
+Conversion is a useful way to measure the efficiency of a reaction at creating the desired product. So, we created an analysis that compared temperature, pressure, and conversion of cumene. We found: <br>
+![](Conversion.png) <br>
+As you can see, conversion is lowest at the plant's current condition, where the change in propylene providers has introduced an impurity but no change has been made to the reaction. As expected, pressure had little impact on conversion; pressure changes the frequency of reactions by changing reactant density, but it does not affect activation energy or how these reactions occur. Interestingly, both increasing and decreasing temperatures in the reaction have similar effects on the conversion.
+
+The quantity of cumene product leaving the reactor, and the amount leaving the process to be sold (stream 13 on the PFD (**See PFD**)) are another measure of plant efficiency. So, we measured both as pressure and temperature in the reactor changed: <br>
+![](mol_cum_8b) <br>
+![](cumene_outlet.png) <br>
+Both follow the same trend. As you can see, lower temperatures correspond to greater cumene outlets, both in the reactor outlet and in the process’ outlet stream. This is unexpected, as higher temperatures generally increase rates of reaction. However examining stream 14, the outlet for p-diisopropyl benzene, shows higher temperatures correspond to greater mass flow rates in stream 14 (**See PFD**). <br>
+![](stream14_massflow.png) <br>
+Since p-diisopropyl benzene is the product of a side reaction, this implies that higher temperatures favor the side reaction. <br>
+
+The cumene product can only be sold if its purity is 99% or greater. So, we determined the purity of stream 13 (**See PFD**): <br>
+![](Purity.png)<br>
+As you can see, the purity is only sufficiently high when T drops to 300K. <br>
+These results indicate that optimization will depend on cost. Since the equipment has already been purchased, the cost depends on utility pricing, inlet chemical purchase price, and product sales. Examining the case where only reactor utility costs impact results yields: <br>
+![](money_react_only.png)<br>
+However, many of these changes occur in the heater, so we performed another analysis that included heater utility and found: <br>
+![](money_config.png)<br>
+
+
 
 **Discussion** <br> everyone
 =======
