@@ -166,8 +166,7 @@ In the idealized situation, the pressure into the reactor increased to 50 bar, a
 
 **TALK A BIT ABOUT COSTS** 
 
-
-**Table of Contents** <br> em (after the fact)
+**Table of Contents** <br> em (after the fact) <br>
 This is only necessary for longer reports. At the top of the page, the proper title is “Contents,” not “Table of Contents.” Regardless of whether you include a table of contents, all pages of your report should be numbered, preferably at the top right corner or top center (the latter permits easy two-sided copying). Number, indent, or otherwise indicate sections, subsections, etc.
 
 **Contents**<br>
@@ -186,21 +185,21 @@ This is only necessary for longer reports. At the top of the page, the proper ti
 5.0 Reccomendations <br>
 6.0 References <br>
 
-**Introduction** <br> edwin
+**Introduction** <br> edwin <br>
 This is for the reader who continues past the abstract. The introduction is a one or two paragraph summary of what was assigned, what was done, and, (very briefly) how it was done. A summary of the constraints on the problem is appropriate, as well as some perspective on the specific problem in the context of the larger business picture. There should be no results or conclusions in the Introduction section.
 
 
 
 **Results** <br>
-The following are essential components of a results section:
+The following are essential components of a results section: 
 
-*Labeled and dated process flow diagram (PFD). Georges 
-Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges
-Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri
-Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri, em
-Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em
+*Labeled and dated process flow diagram (PFD). Georges <br>
+Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges<br>
+Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri **DONE** <br>
+Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri **DONE** <br>
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em <br>
 
-**Capital Costs**
+**Capital Costs** **This is all I plan to do so check it over - Bri ** <br>
 
 The Direct Capital Costs (CD) is $113.1 million/year, with raw materials consisting of over 90% of the total. The full estimated breakdown of the Direct Capital Costs is shown in Table #. Estimation was conducted according to Table 8.2 in Turton. Further breakdowns of raw materials and utilities are in Tables 2 and 4 below. The prices for materials are from ICIS and utility prices from Turton and are assumed to be 2012 values.  <br>
 
@@ -212,7 +211,7 @@ The table below include pricing for all streams entering or leaving the process 
 *Table 2. Annual material costs and prices of reactants and products. Propylene, propane, and benzene are costs, and cumene is a profit.* <br>
 ![crm](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.34%20PM.png) <br> 
 
-Although raw material costs and revenue of the overall process can be approximated using input and product streams alone, the fuel gas product stream acts as fuel for the furnace, thus cost savings are realized by analyzing the production of fuel gas. The full breakdown of each fuel component and their heat of combustion is provided in Table 3. The price per kilogram was calculated using the heats of combustion multiplied by a fuel credit of $2.50/GJ of each component. The heats of combustion and molecular weights are sourced from NIST Webbook. Therefore, the last column in Table 3 is subtracted from the utility costs for the furnace on-site since that amount of fuel would not need to be outsourced to run that equipment at the facility.  <br>
+Although raw material costs and revenue of the overall process can be approximated using input and product streams alone, the fuel gas product stream acts as fuel for the furnace, thus cost savings are realized by analyzing the production of fuel gas. The full breakdown of each fuel component and their heat of combustion is provided in Table 3. The price per kilogram was calculated using the heats of combustion multiplied by a fuel credit of $2.50/GJ of each component. The heats of combustion and molecular weights are sourced from NIST Webbook. Therefore, the last column in Table 3 is subtracted from the utility costs for the furnace on-site since that amount of fuel would not need to be outsourced to run that equipment at the facility. <br>
 
 *Table 3. Annual fuel recovery costs and heats of combustion for materials. Products in streams 9 and 14 are recycled as fuel for the cumene production facility.*
 ![fuel](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.12.42%20PM.png) <br> 
@@ -236,8 +235,19 @@ The Fixed Capital Investment (FCI<sub>L</sub>) for the project is expected to be
 ![fci](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/Screen%20Shot%202020-03-15%20at%2012.13.34%20PM.png) <br> 
 The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub> of approximately $4.4 million. This gives an FCI<sub>L</sub> of $ 30 million. <br>
 
+The CAPCOST sheet used to make these estimations is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_CAPCOST.xlsm). <br>
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
+**Reactor config**
+An intial exploration of the possible reactorconfigurations (optimizing T, P) compared conversion and reactor condition:
+![](Conversion.png)
+we found that **X** was the **WORST** **Best**
+then, we went on to test purity.
+![](Purity.png)
+As you can see, the purity is only high when T drops to 300K
+![](cumene_outlet.png)
+![](money_config.png)
+![](money_react_only.png)
 
 **Discussion** <br> everyone
 =======
