@@ -238,7 +238,8 @@ The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub
 The CAPCOST sheet used to make these estimations is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_CAPCOST.xlsm). <br>
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
-**Reactor config**
+**Reactor config** <br>
+Cumene creation in our system can be improved by changing reactor conditions. To optimize these conditions we performed a two variable optimization on the temperature and pressure inlets to the reactor. The spreadsheet with this information can be found [here](Reactor_optimiz.xlsx)
 An intial exploration of the possible reactorconfigurations (optimizing T, P) compared conversion and reactor condition:
 ![](Conversion.png)
 we found that **X** was the **WORST** **Best**
