@@ -244,7 +244,13 @@ Conversion is a useful way to measure the efficiency of a reaction at creating t
 ![](Conversion.png) <br>
 As you can see, conversion is lowest at the plant's current condition, where the change in propylene providers has introduced an impurity but no change has been made to the reaction. As expected, pressure had little impact on conversion; pressure changes the frequency of reactions by changing reactant density, but it does not affect activation energy or how these reactions occur. Interestingly, both increasing and decreasing temperatures in the reaction have similar effects on the conversion. <br>
 
-![](cumene_outlet.png)<br>
+The quantity of cumene product leaving the reactor, and the amount leaving the process to be sold (stream 13 on the PFD) are another measure of plant efficiency. So, we measured both as pressure and temperature in the reactor changed: <br>
+![](mol_cum_8b) <br>
+![](cumene_outlet.png) <br>
+Both follow the same trend. As you can see, lower temperatures correspond to greater cumene outlets, both in the reactor outlet and in the process’ outlet stream. This is unexpected, as higher temperatures generally increase rates of reaction. However examining stream 14, the outlet for p-diisopropyl benzene, shows higher temperatures correspond to greater mass flow rates in stream 14. <br>
+![](stream14_massflow.png) <br>
+Since p-diisopropyl benzene is the product of a side reaction, this implies that higher temperatures favor the side reaction. <br>
+
 then, we went on to test purity.
 ![](Purity.png)
 As you can see, the purity is only high when T drops to 300K
