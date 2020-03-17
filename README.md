@@ -238,6 +238,16 @@ The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub
 The CAPCOST sheet used to make these estimations is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_CAPCOST.xlsm). <br>
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
+**Reactor config**
+An intial exploration of the possible reactorconfigurations (optimizing T, P) compared conversion and reactor condition:
+![](Conversion.png)
+we found that **X** was the **WORST** **Best**
+then, we went on to test purity.
+![](Purity.png)
+As you can see, the purity is only high when T drops to 300K
+![](cumene_outlet.png)
+![](money_config.png)
+
 
 **Discussion** <br> everyone
 =======
