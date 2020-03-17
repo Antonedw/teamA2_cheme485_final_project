@@ -251,12 +251,15 @@ Both follow the same trend. As you can see, lower temperatures correspond to gre
 ![](stream14_massflow.png) <br>
 Since p-diisopropyl benzene is the product of a side reaction, this implies that higher temperatures favor the side reaction. <br>
 
-then, we went on to test purity.
-![](Purity.png)
-As you can see, the purity is only high when T drops to 300K
-![](money_config.png)
-![](money_react_only.png)
+The cumene product can only be sold if its purity is 99% or greater. So, we determined the purity of stream 13 (**See PFD**): <br>
+![](Purity.png)<br>
+As you can see, the purity is only sufficiently high when T drops to 300K. <br>
+These results indicate that optimization will depend on cost. Since the equipment has already been purchased, the cost depends on utility pricing, inlet chemical purchase price, and product sales. Examining the case where only reactor utility costs impact results yields: <br>
+![](money_react_only.png)<br>
+However, many of these changes occur in the heater, so we performed another analysis that included heater utility and found: <br>
+![](money_config.png)<br>
 
+This indicates that temperatures of 300K and pressures of 25-30 or 45-50 bar are optimal for reactor inlets.<br>
 **Discussion** <br> everyone
 =======
 **Modified equipment--changing U and A or no??? **
