@@ -259,14 +259,16 @@ These results indicate that optimization will depend on cost. Since the equipmen
 However, many of these changes occur in the heater, so we performed another analysis that included heater utility and found: <br>
 ![](money_config.png)<br>
 
+So, the modified equipment is:<br>
+![](Equip_sum1.png)<br>
+![](Equip_sum2.png)<br>
+
+New reactor putrchases will need to account for high pressures, in the case where heater utility is ignored, meaning that they will need thicker walls.
 
 
 **Discussion** <br> everyone
 =======
-**Modified equipment--changing U and A or no??? **
 
-![](Equip_sum1.png)
-![](Equip_sum2.png)
 
 **Discussion** <br>
 
