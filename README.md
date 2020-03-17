@@ -197,7 +197,7 @@ The following are essential components of a results section:
 Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges<br>
 Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri **DONE** <br>
 Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri **DONE** <br>
-Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em <br>
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em **DONE** ***Pls check it out tho*** <br>
 
 **Capital Costs** **This is all I plan to do so check it over - Bri ** <br>
 
@@ -238,16 +238,16 @@ The total C<sub>BM</sub> is just below $3.8 million which yields a C<sub>TM</sub
 The CAPCOST sheet used to make these estimations is provided [here](https://github.com/Antonedw/teamA2_cheme485_final_project/blob/master/project_CAPCOST.xlsm). <br>
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
-**Reactor config** <br>
+**Reactor config**
 Cumene creation in our system can be improved by changing reactor conditions. To optimize these conditions we performed a two variable optimization on the temperature and pressure inlets to the reactor. The spreadsheet with the combined ASPEN and CAPCOST information can be found [here](Reactor_optimiz.xlsx).  <br>
 Conversion is a useful way to measure the efficiency of a reaction at creating the desired product. So, we created an analysis that compared temperature, pressure, and conversion of cumene. We found: <br>
 ![](Conversion.png) <br>
-As you can see, conversion is lowest at the plant's current condition, where the change in propylene providers has introduced an impurity but no change has been made to the reaction. As expected, pressure had little impact on conversion; pressure changes the frequency of reactions by changing reactant density, but it does not affect activation energy or how these reactions occur. Interestingly, both increasing and decreasing temperatures in the reaction have similar effects on the conversion. <br>
+As you can see, conversion is lowest at the plant's current condition, where the change in propylene providers has introduced an impurity but no change has been made to the reaction. As expected, pressure had little impact on conversion; pressure changes the frequency of reactions by changing reactant density, but it does not affect activation energy or how these reactions occur. Interestingly, both increasing and decreasing temperatures in the reaction have similar effects on the conversion.
 
-The quantity of cumene product leaving the reactor, and the amount leaving the process to be sold (stream 13 on the PFD) are another measure of plant efficiency. So, we measured both as pressure and temperature in the reactor changed: <br>
+The quantity of cumene product leaving the reactor, and the amount leaving the process to be sold (stream 13 on the PFD (**See PFD**)) are another measure of plant efficiency. So, we measured both as pressure and temperature in the reactor changed: <br>
 ![](mol_cum_8b.png) <br>
 ![](cumene_outlet.png) <br>
-Both follow the same trend. As you can see, lower temperatures correspond to greater cumene outlets, both in the reactor outlet and in the process’ outlet stream. This is unexpected, as higher temperatures generally increase rates of reaction. However examining stream 14, the outlet for p-diisopropyl benzene, shows higher temperatures correspond to greater mass flow rates in stream 14. <br>
+Both follow the same trend. As you can see, lower temperatures correspond to greater cumene outlets, both in the reactor outlet and in the process’ outlet stream. This is unexpected, as higher temperatures generally increase rates of reaction. However examining stream 14, the outlet for p-diisopropyl benzene, shows higher temperatures correspond to greater mass flow rates in stream 14 (**See PFD**). <br>
 ![](stream14_massflow.png) <br>
 Since p-diisopropyl benzene is the product of a side reaction, this implies that higher temperatures favor the side reaction. <br>
 
@@ -259,13 +259,16 @@ These results indicate that optimization will depend on cost. Since the equipmen
 However, many of these changes occur in the heater, so we performed another analysis that included heater utility and found: <br>
 ![](money_config.png)<br>
 
-This indicates that temperatures of 300K and pressures of 25-30 or 45-50 bar are optimal for reactor inlets.<br>
+So, the modified equipment is:<br>
+![](Equip_sum1.png)<br>
+![](Equip_sum2.png)<br>
+
+New reactor putrchases will need to account for high pressures, in the case where heater utility is ignored, meaning that they will need thicker walls.
+
+
 **Discussion** <br> everyone
 =======
-**Modified equipment--changing U and A or no??? **
 
-![](Equip_sum1.png)
-![](Equip_sum2.png)
 
 **Discussion** <br>
 
