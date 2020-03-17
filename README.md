@@ -239,14 +239,15 @@ The CAPCOST sheet used to make these estimations is provided [here](https://gith
 **still need to CAPCOST s the addition of new equipment after modifications are made 
 
 **Reactor config** <br>
-Cumene creation in our system can be improved by changing reactor conditions. To optimize these conditions we performed a two variable optimization on the temperature and pressure inlets to the reactor. The spreadsheet with this information can be found [here](Reactor_optimiz.xlsx)
-An intial exploration of the possible reactorconfigurations (optimizing T, P) compared conversion and reactor condition:
-![](Conversion.png)
-we found that **X** was the **WORST** **Best**
+Cumene creation in our system can be improved by changing reactor conditions. To optimize these conditions we performed a two variable optimization on the temperature and pressure inlets to the reactor. The spreadsheet with the combined ASPEN and CAPCOST information can be found [here](Reactor_optimiz.xlsx).  <br>
+Conversion is a useful way to measure the efficiency of a reaction at creating the desired product. So, we created an analysis that compared temperature, pressure, and conversion of cumene. We found: <br>
+![](Conversion.png) <br>
+As you can see, conversion is lowest at the plant's current condition, where the change in propylene providers has introduced an impurity but no change has been made to the reaction. As expected, pressure had little impact on conversion; pressure changes the frequency of reactions by changing reactant density, but it does not affect activation energy or how these reactions occur. Interestingly, both increasing and decreasing temperatures in the reaction have similar effects on the conversion. <br>
+
+![](cumene_outlet.png)<br>
 then, we went on to test purity.
 ![](Purity.png)
 As you can see, the purity is only high when T drops to 300K
-![](cumene_outlet.png)
 ![](money_config.png)
 ![](money_react_only.png)
 
