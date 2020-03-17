@@ -253,7 +253,9 @@ Since p-diisopropyl benzene is the product of a side reaction, this implies that
 
 The cumene product can only be sold if its purity is 99% or greater. So, we determined the purity of stream 13 (**See PFD**): <br>
 ![](Purity.png)<br>
-As you can see, the purity is only sufficiently high when T drops to 300K. <br>
+As you can see, the purity is only sufficiently high when T drops to 300C. <br>
+At 300C, Pressure impacts outlet: at P = 45 bar the rate of cumene product production is ~0.35 kg/hr greater than it is at P = 30 bar. However, this change is relatively small, and the process has multiple products. <br> 
+![](C_out_300K)
 These results indicate that optimization will depend on cost. Since the equipment has already been purchased, the cost depends on utility pricing, inlet chemical purchase price, and product sales. Examining the case where only reactor utility costs impact results yields: <br>
 ![](money_react_only.png)<br>
 However, many of these changes occur in the heater, so we performed another analysis that included heater utility and found: <br>
