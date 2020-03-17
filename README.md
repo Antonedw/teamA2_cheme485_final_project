@@ -247,7 +247,7 @@ then, we went on to test purity.
 As you can see, the purity is only high when T drops to 300K
 ![](cumene_outlet.png)
 ![](money_config.png)
-
+![](money_react_only.png)
 
 **Discussion** <br> everyone
 =======
