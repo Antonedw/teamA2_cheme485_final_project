@@ -276,6 +276,12 @@ New reactor putrchases will need to account for high pressures, in the case wher
 
 Now you go into more detail. This section is for the reader who still wants more information and is willing to read still further. Here you discuss the reasons for making choices and the reasons for discarding alternatives. This is where you discuss any optimization that was done. You might also discuss non routine or unique computational aspects
 
+Increasing impurity in the reactant stream inhibits the reaction by diminishing the number of collisions between reactants. Ameliorating this necessitates changing reactor conditions.<br>
+
+We found that the reactor produced high masses of high purity  cumene product when temperatures were decreased to 300C and pressures were increased to 45-50 bar. <br>
+Decreasing the temperatures drops the average rate of both reactions. More specifically, it increases the rate of reaction 1, which creates the cumene product, and decreases the rate of the side reaction. This is because the activation energy of the side reaction is higher than that of reaction 1. Decreasing temperatures mean the molecules have less energy, causing the process to favor the first reaction, resulting in greater amounts of cumene product. Since the reaction is in the vapor phase, increasing pressure increases the density of the reactants, causing more frequent collisions and therefore faster reactions.
+
+
 **Conclusions** <br> em, edwin
 Nothing new is presented in this section. You should reiterate your important conclusions, which may have already been stated in the abstract, the executive summary, and/or the letter of transmittal. Usually these will involve dollars and process modifications. Be concise and clear; avoid lengthy paragraphs. Once again, remember the bottom line!
 
