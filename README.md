@@ -278,8 +278,12 @@ Now you go into more detail. This section is for the reader who still wants more
 
 Increasing impurity in the reactant stream inhibits the reaction by diminishing the number of collisions between reactants. Ameliorating this necessitates changing reactor conditions.<br>
 
+We decided to vary temperature and pressure into the reaction by examining reaction kinetics. In gas phase reactions, temperature changes affect the amount of energy in molecule movements, and pressure changes affect the density of the reactants, and therefore the frequency of their collisions.  <br>
+
+To do this, we modeled the system using Aspen, and calculated prices with CAPCOST. The condition of the stream flowing into the reactor was decided at the heater. To compare the cost of one variation over the next, we used the utility costs and the gain from cumene production. The utility costs examined were first of the reactor system only, and then included the heater utility.  <br>
+
 We found that the reactor produced high masses of high purity  cumene product when temperatures were decreased to 300C and pressures were increased to 45-50 bar. <br>
-Decreasing the temperatures drops the average rate of both reactions. More specifically, it increases the rate of reaction 1, which creates the cumene product, and decreases the rate of the side reaction. This is because the activation energy of the side reaction is higher than that of reaction 1. Decreasing temperatures mean the molecules have less energy, causing the process to favor the first reaction, resulting in greater amounts of cumene product. Since the reaction is in the vapor phase, increasing pressure increases the density of the reactants, causing more frequent collisions and therefore faster reactions.
+Decreasing the temperatures drops the average rate of both reactions. More specifically, it increases the rate of reaction 1, which creates the cumene product, and decreases the rate of the side reaction. This is because the activation energy of the side reaction is higher than that of reaction 1. Decreasing temperatures mean the molecules have less energy, causing the process to favor the first reaction, resulting in greater amounts of cumene product. Since the reaction is in the vapor phase, increasing pressure increases the density of the reactants, causing more frequent collisions and therefore faster reactions.<br>
 
 
 **Conclusions** <br> em, edwin
