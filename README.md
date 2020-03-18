@@ -197,7 +197,7 @@ The following are essential components of a results section:
 Stream flow tables. These must include temperature, pressure, phase, total mass flow rate, total molar flow rate, and component molar flow rates for each numbered stream. Georges<br>
 Manufacturing cost summary. Yearly revenue and expense (income from product sales, expenses for raw materials, utilities [itemized], equipment costs if calculated as an annual cost, personnel, etc.) must be included. Bri **DONE** <br>
 Investment summary. The cost to build and install plant now (if appropriate to goals of the problem). This should be itemized by piece of equipment. Bri **DONE** <br>
-Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> em **DONE** ***Pls check it out tho*** <br>
+Equipment summary. A listing of equipment to be purchased and installed, with specifications required. This could be combined with 4. if not too long.* <br> Bri  **DONE** ***Pls check it out tho*** <br>
 
 **Capital Costs** **This is all I plan to do so check it over - Bri ** <br>
 
